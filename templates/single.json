@@ -4,10 +4,113 @@
       "name": "irving/body-wrapper",
       "children": [
         {
-          "name": "irving/text",
+          "name": "irving/container",
           "config": {
-            "content": "Welcome to single.json"
-          }
+            "max_width": "md",
+            "style": {
+              "padding": "0 1rem"
+            }
+          },
+          "children": [
+            {
+              "name": "irving/post-title",
+              "theme": "single_title",
+              "config": {
+                "tag": "h2",
+                "style": {
+                  "margin-bottom": "1rem"
+                }
+              }
+            },
+            {
+              "name": "irving/container",
+              "config": {
+                "theme": "single_meta_container"
+              },
+              "children": [
+                {
+                  "name": "irving/post-byline",
+                  "config": {
+                    "theme": "single_byline"
+                  }
+                },
+                {
+                  "name": "irving/post-timestamp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "irving/container",
+          "config": {
+            "max_width": "lg",
+            "style": {
+              "margin-top": "1rem"
+            }
+          },
+          "children": [
+            {
+              "name": "irving/post-featured-image",
+              "config": {
+                "aspect_ratio": "16:9",
+                "object_fit": "cover"
+              }
+            }
+          ]
+        },
+        {
+          "name": "irving/container",
+          "config": {
+            "max_width": "md",
+            "style": {
+              "margin-top": "1rem",
+              "padding": "0 1rem"
+            }
+          },
+          "children": [
+            {
+              "name": "irving/post-content",
+              "config": {
+                "theme": "html",
+                "style": {
+                  "margin-bottom": "2rem"
+                }
+              }
+            },
+            {
+              "name": "irving/text",
+              "config": {
+                "content": "Share this post:",
+                "theme": "h3",
+                "tag": "h5",
+                "style": {
+                  "font-family": "'Open Sans', sans-serif",
+                  "font-size": "1rem",
+                  "letter-spacing": "-0.015em",
+                  "line-height": "1.2",
+                  "margin-bottom": "rem"
+                }
+              }
+            },
+            {
+              "name": "irving/social-sharing",
+              "config": {
+                "style": {
+                  "margin-bottom": "2rem"
+                }
+              }
+            },
+            {
+              "name": "tutorial/podcast",
+              "config": {
+                "title": "The Kitten Podcast",
+                "style": {
+                  "margin-bottom": "2rem"
+                }
+              }
+            }
+          ]
         }
       ]
     }

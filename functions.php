@@ -8,3 +8,5 @@
  * @subpackage Irving_Starter_Theme
  * @since 1.0.0
  */
+
+add_theme_support( 'post-thumbnails' );

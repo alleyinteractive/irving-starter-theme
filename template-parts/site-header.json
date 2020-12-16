@@ -1,6 +1,20 @@
 {
-  "name": "irving/text",
+  "name": "irving/container",
   "config": {
-    "content": "Welcome to template-parts/header.json"
-  }
+    "style": {
+      "border-bottom": "1px solid black",
+      "margin-bottom": "1rem",
+      "text-align": "center"
+    }
+  },
+  "children": [
+    {
+      "name": "irving/site-logo",
+      "config": {
+        "style": {
+          "padding": "2rem"
+        }
+      }
+    }
+  ]
 }
